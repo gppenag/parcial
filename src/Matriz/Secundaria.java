@@ -16,7 +16,7 @@ public class Secundaria {
     //lenar matriz
     public void llenarMatriz(int vec[][]){
         for (int i = 0; i < vec.length; i++) {
-            for (int j= 0; j < vec.length; j++) {
+            for (int j= 0; j < vec[0].length; j++) {
                 vec [i][j]= r.nextInt(10);
             }
         }

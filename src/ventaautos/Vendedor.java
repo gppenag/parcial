@@ -5,7 +5,7 @@
  */
 package ventaautos;
 
-import java.util.ArrayList;
+
 
 public class Vendedor {
 
@@ -16,17 +16,15 @@ public class Vendedor {
     //ArrayList<Auto> autos;
 
 
-    public void bono(Auto a,Opcion o) {
-        if(o. getOpcion().equalsIgnoreCase("s")){
+    public void bono(Auto a) {
         double c = a.getValor() * 0.05;
         comision += 150 + c;
-    }  
     }
     
     
     public Vendedor(String nombre, double salario) {
         this.nombre = nombre;
-        this.salario
+        this.salario = salario;
         comision = 0;
     }
     
@@ -49,4 +47,13 @@ public class Vendedor {
         this.nombre = nombre;
     }
 
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+     
+    
 }
